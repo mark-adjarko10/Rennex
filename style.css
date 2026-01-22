@@ -118,7 +118,7 @@ border-bottom:4px solid rgb(12, 98, 218);
 
   .body{
     padding: 30px;
-    margin-left:38%;
+    margin-left:40%;
     justify-content: center;
     align-items: center;
     
@@ -973,6 +973,7 @@ footer img{
   display: block;
   box-shadow: 0px 5px 10px rgb(188, 185, 185);
 }
+
 
 
 
