@@ -9,7 +9,7 @@ body{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* background-image: url(images/backimg3.jpg); */
   padding: 10px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* display: grid; */
         /* grid-template-columns: repeat(auto-fit, minmax(00px, 1fr)); */
 }
@@ -118,7 +118,7 @@ border-bottom:4px solid rgb(12, 98, 218);
 
   .body{
     padding: 30px;
-    margin-left:65%;
+    margin-left:15%;
     justify-content: center;
     align-items: center;
     
@@ -340,7 +340,7 @@ h3{
   width: 100%;
   height: 100%;
   margin-top: 200px;
-  margin-left: 0;
+  margin-left: 4%;
   justify-content: center;
   /* margin: 0 auto; */
   display: grid;
@@ -574,7 +574,7 @@ display: grid;
   justify-content: center;
   align-items: center;
   margin-top:210px;
-  margin-left: 0;
+  margin-left: 4%;
 
 }
 
@@ -761,6 +761,7 @@ h4{
   grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   width:100%;
   margin-top: 200px;
+  margin-left: 4%;
   gap:50px;
   align-items: center;
   justify-content: center;
@@ -885,6 +886,18 @@ transition: 0.4s ease-in-out;
 
 .contact-content button{
   display: flex;
+  padding:10px;
+  background: #fff;
+  border-width: 0.5px;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content button:hover{
+background-color: #000;
+transform: scale(1.1);
+color: #fff;
 }
 
 .contact-content button:active{
@@ -960,11 +973,6 @@ footer img{
   display: block;
   box-shadow: 0px 5px 10px rgb(188, 185, 185);
 }
-
-
-
-
-
 
 
 
