@@ -1,974 +1,347 @@
-*{
-  padding: 0;
-  margin:0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rennex&Co IT Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/company logo.png">
+</head>
+<body>
+      <!-- HEADER -->
+      
+<div class="body">
+<nav>
+  <div class="navigation-bar">
+    <div class="company-name">
+      <h1>Rennex&Co <small>IT Solutions</small></h1>
+    </div>
+    <input type="checkbox" id="sideC">
+    <div class="menu-bar" id="side">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-body{
+    <div id="main">
+  <label for="sideC" id="sideL">&#9776;</label>
+</div>
 
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* background-image: url(images/backimg3.jpg); */
-  /* display: grid; */
-        /* grid-template-columns: repeat(auto-fit, minmax(00px, 1fr)); */
-        overflow-x: hidden;
-}
-
-.body{
-    justify-content: center;
-  align-items: center;
-      }
-
-
-.navigation-bar{
-  display: flex;
-  gap: 100px;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width:100%;
-  /* border-radius: 10px; */
-  /* box-shadow: 0px 0px 10px #a8a7a7; */
-  margin-top: 50px;
-}
-
-
-h1{
-  font-size: 35px;
-}
-
-small{
-  color:rgb(16, 70, 246)
-}
-
-.menu-bar{
-  margin-left: 100px;
-}
-
-.menu-bar ul{
-  display: flex;
-}
-
-.menu-bar ul li{
-  list-style: none;
-}
-
-.menu-bar ul li a{
-  text-decoration: none;
-  margin: 10px;
-  color: #000;
-  font-size:20px
-}
-
-.menu-bar ul li a:hover{
-color: rgb(121, 121, 119);
-}
-
-.menu-bar ul li a:focus{
-border-bottom:4px solid rgb(12, 98, 218);
-}
+  </div>
 
 
-/* HIDDEN MENU */
-#sideC { 
-  display: none; 
-}
- 
-/* (B) BIG SCREEN : 2-COLUMN LAYOUT */
-#side { 
-  width: 150px; 
-}
-
-#main { 
-  flex-grow: 1; 
-}
-
-#sideL {
-   display: none;
-   }
- 
-/* (C) SMALL SCREEN */
-@media only screen and (max-width: 600px) {
-
-  body{
-    justify-content: center;
-    align-items: center;
-  }
-
-  .intro{
-    width:100%;
-    height: 100%;
-  }
-
-
-  .intro img{
-    height: auto;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .content{
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width:100%;
-    top: 150px;
-  }
-
-
-  h3{
-    text-align: center;
-  }
-
-  
-
-  .contents{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .work{
-    flex-direction: column;
-    margin-left: 0;
-  }
-  .customer-logos{
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .choose{
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  .values{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .clients{
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contact-box{
-    flex-direction: column;
-  }
+</nav>
 
 
 
-  .content1, .content2, .content3,
-.client1, .value, .mission, .vision {
-  width: 90%; /* instead of 350px or 310px */
-  max-width: 350px;
-  margin-bottom: 30px;
-}
+<!-- BODY -->
+            <section class="intro">
+            <img src="images/accounting.jpg" alt="Background Image">
+           <div class="content">
+            <h2>Welcome to Rennex & Co IT Solutions</h2>
+            <p>We are a technology driven company providing 
+              innovative solutions to businesses and individuals
+               across the globe. Our team of experts is dedicated 
+               to delivering high-quality services that meet the 
+               unique needs of our clients. At Rennex & Co IT Solutions,
+                we believe in the power of technology to transform
+                 lives and businesses. Join us on this journey to 
+                 explore the endless possibilities of technology. 
+               </p>
+               <button>Learn More</button>
+           </div>
+           </section>
 
-   .contact{
-    width: 100%;
-    flex-direction: column;
-  }
+           
 
-  .contact-content{
-    flex-direction: column;
-  }
+            <!-- WHAT WE DO -->
+<section id="services">
+  <h3>What <small>We Do!</small></h3>
+  <div class="contents autoshow">
 
-  .contact input{
-    width:280px;
-  }
-  textarea{
-    width:280px;
-  }
+    <div class="content1">
+            <img src="images/ai.jpg">
+      <p>Artificial Intelligence</p>
+      <div class="info">
+        <p>Artificial Intelligence is the new <br>emerged technology running 
+          the<br> system currently across all fields in the<br> IT space. Our 
+        AI powered systems and developmentteam provide customized<br> bots 
+        integrated<br> into client's personalized systems</p>
+      </div>
+      
+    </div>
 
-  .contact-content button{
-    display: block;
-  }
-
-  footer{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-
-
-  .navigation-bar{
-    align-items: center;
-    justify-content: center;
-  }
-
-  .menu-bar ul{
-    display: block;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .menu-bar ul li a{
-    margin-top: 0;
-    color:#fff;
-  }
-  
-  /* (C1) HIDDEN SIDEBAR */
-  #side {
-    width: 0; 
-    visibility: hidden; 
-    opacity: 0;
-    margin-right: 0;
-    /* transition: all 0.1s; */
-    /* display: block; */
-  }
-
-  #side {
-  color: #fff;
-  background: #333;
-  /* display: block; */
-}
-
- 
-  /* (C2) SHOW SIDEBAR WHEN CHECKED */
-  #sideL{
-     display: inline-block;
-    font-size: 38px;
-    color: #000000;
-    cursor: pointer;
-    margin-right: auto;
-    z-index: 1;
-    }
+    <div class="content2">
+      <img src="images/cloud.jpg">
+      <p>Cloud Solutions</p>
+      <div class="info">
+        <p>Our cloud solutions provide<br> scalable, reliable, 
+          and efficient <br>infrastructure for businesses of 
+          all <br>sizes. We help organizations migrate<br> to the
+           cloud,manage cloud resources,<br> and optimize
+            performance to ensure <br>seamless operations and
+             cost savings.</p>
+      </div>
     
-
-  #sideC:checked ~ #side  {
-    width: 150px; 
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    height: 34%;
-    padding:10px;
-    line-height: 40px;
-    position: absolute;
-    top:20%;
-    left:20%;
-    z-index: 1;
-  }
-
-  #sideC:not(:checked) ~ #side  {
-    display: none;
-  }
-
-  .work{
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  .work p{
-    padding-top: 55px;
-  }
-
-}
-
-
-/* BODY */
-
-.intro{
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  padding-left: 0;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
-  margin-top:50px ;
-}
-
-.intro img{
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.intro::before{
-  content: '';
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  margin-top: 25px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.content{
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  width:100%;
-  height: 100%;
-  top: 180px;
-}
-
-.content p{
-  font-size: 20px;
-  margin-bottom: 10px;
-  line-height: 28px;
-}
-
-.content button{
-  position: relative;
-  top: 2px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #fff;
-  color: #0f0d0d;
-  font-family: 'Times New Roman', Times, serif;
-  border-width: 0.4px;
-  border-bottom: 2px solid black;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.content button:hover{
- background-color: #0f0d0d;
- color: #fff;
- transform: scale(1.1);
-}
-
-
-/* WHAT WE DO */
-
-h3{
-  color:#000;
-  position: relative;
-  top:150px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.contents{
-  width: 100%;
-  height: 100%;
-  margin-top: 200px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap:50px;
-  align-items: center;
-}
-
-.autoshow{
-  animation: text-appear both;
-  animation-timeline: view();
-  animation-range: entry 5% cover 100vh;
-}
-
-@keyframes text-appear{
-  from{
-    opacity: 0;
-    transform: translateY(150px);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.content1{
-  width: 310px;
-  height: 600px;
-  box-shadow: 0px 5px 10px rgb(188, 185, 185);
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: start;
-    /* border-bottom-right-radius:100px ; */
-}
-
-.content1 img{
-  width: 100%;
-  object-fit: cover;
-}
-
-.content1 p{
-  font-size: 20px;
-  padding-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  padding-left: 5px;
-}
-
-
-.info p{
-  width: 100%;
-  display: grid;
-  height:auto;
-  font-size: 12px;
-  font-weight: normal;
-  text-align: start;
-  line-height: 25px;
-}
-
-.content2{
-  width: 308px;
-  height: 600px;
-  box-shadow: 0px 5px 10px rgb(188, 185, 185);
-    margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: start;
-    /* border-bottom-right-radius:100px ; */
-
-}
-
-.content2 img{
-  width: 100%;
-  object-fit: cover;
-}
-
-.content2 p{
-  font-size: 20px;
-  padding-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  padding-left: 5px;
-}
-
-
-.content3{
-  width: 310px;
-  height: 500px;
-  box-shadow: 0px 5px 10px rgb(188, 185, 185);
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: start;
-  /* border-bottom-right-radius:100px ; */
-}
-
-.content3 img{
-  width: 100%;
-  object-fit: contain;
-  padding-top:0px;
-}
-
-.content3 p{
-  font-size: 20px;
-  padding-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  padding-left: 5px;
-}
-
-.info p{
-  width: 350px;
-  height:100px;
-  font-size: 17px;
-  padding-left: 10px;
-  font-weight: normal;
-  line-height: 25px;
-}
-
-
-/* HOW WE WORK */
-.work{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 180px;
-  margin-left: 0;
-}
-
-.work img{
-  max-width: 280px;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 0px 5px 10px rgb(188, 185, 185);
-}
-
-.work-info{
-  padding-left: 10px;
-  max-width: 600px;
-}
-
-.work-info ul{
-  font-size: 17px;
-  list-style: none;
-  line-height: 25px;
-  padding-top: 25px;
-  color: #575555;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.work-info p{
-  font-size: 18px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
- .work-button button{
-  margin-left: 40%;
-    position: relative;
-  top: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #fff;
-  color: #0f0d0d;
-  font-family: 'Times New Roman', Times, serif;
-  border-width: 0.4px;
-  border-bottom: 2px solid black;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.work-button button:hover{
-background-color: #0f0d0d;
- color: #fff;
- transform: scale(1.1);
-
-}
-
-strong{
-  font-size: 19px;
-  color: #2e1ae4;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-
-/* CUSTOMER LOGOS */
-.customer{
-  width: 100%;
-}
-
-.customer-logos{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-items: center;
-  width: 100%;
-  height:50%;
-  margin-top: 250px;
-}
-
-.customer-logos img{
-  width: 200px;
-  margin: 30px 10px;
-  border-radius: 50%;
-    box-shadow: 0px 5px 10px rgb(224, 223, 223);
-      transition: 0.4s ease-in-out;
-  animation: none;
-}
-
-
-
-/* CLIENTS */
-.clients{
-  width: 100%;
-  height: 100%;
-  gap:55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:210px;
-
-}
-
-.client1{
-  width:300px;
-  height: 500px;
-    box-shadow: 0px 5px 10px rgb(188, 185, 185);
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border-bottom-right-radius: 50px;
-    transition: 0.4s ease-in-out;
-}
-
-
-.client1 button{
-  position: relative;
-  top: 1px;
-  margin-left:90px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #fff;
-  color: #0f0d0d;
-  font-family: 'Times New Roman', Times, serif;
-  border-width: 0.4px;
-  border-bottom: 2px solid black;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.client1 button:active{
-background-color: #cecbcb;
-color: #0f0d0d;
-}
-
-.client1 img{
-width:100%;
-height:40%;
-object-fit: contain;
-margin-top:10px;
-}
-
-h4{
-  text-align: center;
-  font-size:20px;
-  font-family:cursive;
-  margin-top: 30px;
-}
-
-.testimony p{
-  font-size:16px;
-  padding:15px;
-  line-height: 25px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* WHY CHOOSE US */
-
-.choose{
-  width: 100%;
-  height: auto;
-  margin-top: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.reason-info{
-  text-align: center;
-  margin: 20px;
-  font-size: 18px;
-  line-height: 24px;
-    color: #575555;
-
-}
-
-.reason1{
-width:310px;
-  height: 500px;
-    /* box-shadow: 0px 5px 10px rgb(188, 185, 185); */
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: 0.4s ease-in-out;
-}
-
-.reason1 img{
-  width:100%;
-height:50%;
-object-fit: contain;
-margin-bottom:-60px;
-}
-
-.reason2{
-width:310px;
-  height: 500px;
-    /* box-shadow: 0px 5px 10px rgb(188, 185, 185); */
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: 0.4s ease-in-out;
-    text-align: center;
-}
-
-.reason2 h4{
-  padding-top: 50px;
-}
-
-.reason2 img{
-  width:80%;
-height:50%;
-object-fit: contain;
-margin-bottom:-60px;
-}
-
-.reason3{
-  width:310px;
-  height: 500px;
-    /* box-shadow: 0px 5px 10px rgb(188, 185, 185); */
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: 0.4s ease-in-out;
-    text-align: center;
-}
-
-.reason3 img{
-  width:80%;
-height:50%;
-object-fit: contain;
-margin-bottom:-60px;
-}
-
-h4{
-  text-align: center;
-  font-size:20px;
-  font-family:cursive;
-  margin-top: 30px;
-}
-
-
-/* TECHNOLOGIES WE USE */
-
-
-.technologies{
-  width: 100%;
-  height: auto;
-  margin-top: 200px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  gap:20px;
-        animation: roll 4s linear infinite;
-      animation-direction: alternate;
-      animation-iteration-count: infinite;
-}
-
-@keyframes roll{
-  from{
-    transform: translateX(0);
-  }
-
-  to{
-    transform: translateX(-20%);
-  } 
-} 
-
-.technologies img{
-  width:20%;
-  height: 100%;
-}
-
-/* VALUES,MISSION & VISION */
-.values{
-  display: flex;
-  height: 100%;
-  width:100%;
-  margin-top: 200px;
-  gap:50px;
-  align-items: center;
-  justify-content: center;
-  /* box-shadow: 0px 5px 10px rgb(188, 185, 185); */
-  transition: 0.4s ease-in-out;
-  font-family: arial;
-}
-
-
-.principles-info{
-  text-align: center;
-  margin: 20px;
-}
-
-.value{
-  width:290px;
-  height: 450px;
-    box-shadow: 0px 5px 10px rgb(188, 185, 185);
-justify-content: center;
-align-items: center;
-margin-bottom: 10px;
-border-bottom-right-radius: 50px;
-  transition: 0.4s ease-in-out;
-}
-
-
-
-.value img{
-  width: 200px;
-  justify-content: center;
-  margin-left:45px;
-  position: relative;
-  top:30px;
-}
-
-.value h3{
-  padding-top:50px;
-}
-
-.mission{
-   width:290px;
-  height: 450px;
-    box-shadow: 0px 5px 10px rgb(188, 185, 185);
-justify-content: center;
-align-items: center;
-border-bottom-right-radius: 50px;
-transition: 0.4s ease-in-out;
-}
-
-
-.mission img{
-  width: 200px;
-  height:35%;
-  justify-content: center;
-  align-items: center;
-  margin-left:45px;
-  position: relative;
-  top:30px;
-}
-
-.mission h3{
-  padding-top:50px;
-  padding-bottom: -50px;
-}
-
-.vision{
- width:290px;
-  height: 450px;
-    box-shadow: 0px 5px 10px rgb(188, 185, 185);
-justify-content: center;
-align-items: center;
-border-bottom-right-radius: 50px;
-transition: 0.4s ease-in-out;
-}
-
-
-.vision img{
-  width: 200px;
-  height:180px;
-  justify-content: center;
-  margin-left:45px;
-  position: relative;
-  top:30px;
-  border-radius: 50%;
-}
-
-.vision h3{
-  padding-top:50px;
-  padding-bottom: -50px;
-}
-
-
-/* CONTACT US */
-.contact-box{
-  width: 100%;
-  height: auto;
-  margin-top: 40px;
-  justify-content: center;
-  padding-top: 50px;
-  display: flex;
-}
-
-.contact-box h3{
-  margin-bottom: 190px;
-}
-
-
-
-.contact{
-  /* margin:0 auto; */
-  margin-top: 60px;
-  width:540px;
-  height: 750px;
-  border-radius: 10px;
-  /* box-shadow: 0px 5px 10px rgb(188, 185, 185); */
-}
-
-.contact-content{
-  padding: 40px;
-}
-
-.contact-content button{
-  display: flex;
-  padding:10px;
-  background: #fff;
-  border-width: 0.5px;
-  border-bottom: 2px solid black;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-}
-
-.contact-content button:hover{
-background-color: #000;
-transform: scale(1.1);
-color: #fff;
-}
-
-.contact-content button:active{
-background-color: #cecbcb;
-color: #100d0d;
-}
-
-.contact p{
-  margin: 6px;
-  padding: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.contact input{
-  padding: 10px;
-  width:310px;
-  height: 55px;
-  margin: 10px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 5px 10px rgb(220, 219, 219);
-  outline: none;
-}
-
-textarea{
-  width:310px;
-  height:180px;
-  margin:10px;
-    border-radius: 2px;
-     border: none;
-  box-shadow: 0px 5px 10px rgb(220, 219, 219);
-  outline: none;
-  align-items: center;
-  padding: 15px;
-}
-
-footer{
-  width: 100%;
-  margin-top: 180px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-footer ul{
-  list-style: none;
-  margin-top: 20px;
-}
-
-footer ul a{
-  text-decoration: none;
-  color: #000;
-  line-height: 25px;
-  font-size: 16px;
-}
-
-footer ul a:focus{
-border-bottom: solid 2px rgb(40, 49, 218);
-}
-
-footer p{
-  text-align: center;
-  font-size: 18px;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-footer img{
-  max-width:250px;
-  margin-left:auto;
-  margin-right:auto;
-  display: block;
-  box-shadow: 0px 5px 10px rgb(188, 185, 185);
-}
-
-
-
-
-
-
+    </div>
+
+
+    <div class="content3">
+      <img src="images/network setup.jpg">
+      <p>Network Setup & Maintenance</p>
+      <div class="info">
+        <p>Our network setup and maintenance services ensure your systems are<br> 
+          always connected and running<br> smoothly. We design, implement, 
+          and manage robust network infrastructures<br> that support your 
+          business operations<br> and growth.</p>
+      </div>
+
+    </div>
+
+        <div class="content3">
+      <img src="images/cybersecurity.jpg">
+      <p>Cybersecurity</p>
+      <div class="info">
+        <p>Our cybersecurity services protect your business from evolving 
+          threats.<br> We provide comprehensive security solutions including
+           network security,<br> endpoint protection, and threat<br> monitoring 
+           to keep your data safe and<br> your systems secure.</p>
+      </div>
+
+    </div>
+
+        <div class="content3">
+      <img src="images/web dev.jpg">
+      <p>Web Development</p>
+      <div class="info">
+        <p>Our web development team creates responsive, 
+          user-friendly websites and<br> web applications tailored
+           to your<br> business needs. We focus on<br> delivering seamless
+            experiences<br> across all devices and platforms.</p>
+      </div>
+
+    </div>
+
+        <div class="content3">
+      <img src="images/it consulting.jpg">
+      <p>IT Consulting</p>
+      <div class="info">
+        <p>Our IT consulting services provide<br> strategic guidance
+           and technical<br> expertise to help businesses navigate<br> the
+            complexities of modern technology.<br> We work closely with 
+            clients to<br> understand their unique challenges and develop
+             tailored solutions that drive<br> growth and efficiency.</p>
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+
+
+  <!-- HOW WE WORK -->
+        <section id="how-we-work">
+          <h3>How <small>We Work</small></h3>
+        <div class="work autoshow">
+          <img src="images/company logo.png">
+          <div class="work-info">
+            <p>At Rennex & Co IT Solutions, we follow a structured approach to ensure the successful delivery of our services. Our process includes:</p>
+            <ul>
+              <li><strong>Consultation:</strong> We begin by understanding your business needs and objectives.</li>
+              <li><strong>Planning:</strong> We develop a customized plan that outlines the scope, timeline, and resources required for the project.</li>
+              <li><strong>Implementation:</strong> Our team executes the plan, ensuring quality and efficiency at every step.</li>
+              <li><strong>Testing:</strong> We rigorously test our solutions to ensure they meet your requirements and perform optimally.</li>
+              <li><strong>Support:</strong> We provide ongoing support and maintenance to ensure your systems remain up-to-date and secure.</li>
+            </ul>
+          </div>
+        </div>
+                 <div class="work-button"><button>Get Started &xrarr;</button></div>
+
+        </section>
+
+      <!-- CLIENTS -->
+<div class="customers autoshow">
+  <h3>Our <small>Loyal Clients</small></h3>
+  <div class="customer-logos">
+    <img src="images/favicon.jpg">
+    <img src="images/logo.jpeg" >
+    <img src="images/new logo.jpeg" >
+    <img src="images/apg.jpeg">
+</div>
+</div>
+
+<!-- WHY CHOOSE US -->
+
+      <section id="why-choose-us">
+        <h3>Why <small>Choose Us?</small></h3>
+       <div class="choose autoshow">
+         <div class="reason1">
+          <img src="images/expertise.jpg">
+           <h4>Expertise</h4>
+           <div class="reason-info"><p>Our team of skilled professionals brings a wealth of experience and knowledge to every project, ensuring top-notch solutions for our clients.</p></div>
+         </div>
+         <div class="reason2">
+          <img src="images/customer service.jpg">
+           <h4>Customer Service</h4>
+           <div class="reason-info"><p>We prioritize our clients' needs and provide exceptional customer service, ensuring satisfaction and long-term partnerships.</p></div>
+         </div>
+         <div class="reason3">
+          <img src="images/innovation.jpg">
+           <h4>Innovation</h4>
+           <div class="reason-info"><p>We stay ahead of industry trends and leverage the latest technologies to deliver innovative solutions that drive business growth.</p></div>
+         </div>
+       </div>
+       </section>
+
+
+       <!-- TECHSTACK -->
+
+        <section id="techstack">
+          <h3>Our <small>Tech Stack</small></h3>
+        <div class="technologies autoshow">
+          <img src="images/html.jpg">
+          <img src="images/css.jpg">
+          <img src="images/mikrotik.jpg">
+          <img src="images/cloud services.jpg">
+          <img src="images/cisco.jpg">
+        </div>
+        </section>
+
+
+<!-- TESTIMONIES -->
+      <section id="testimonials">
+                  <h3> What Our <small>Loyal Clients Say!</small></h3>
+       <div class="clients autoshow">
+
+        <div class="client1">
+          <img src="images/favicon.jpg">
+          <h4>P&K CUISINE</h4>
+          <div class="testimony">
+          <p>"Rennex & Co IT Solutions revamped our entire IT infrastructure,
+             boosting our efficiency and customer satisfaction."</p>
+        </div>
+        <button>Vist site &xrarr;</button>
+        </div>
+
+        <div class="client1">
+          <img src="images/logo.jpeg">
+          <h4>Atta Kakera Shopifi</h4>
+          <div class="testimony">
+          <p>"Our online store has never been better
+             since we partnered with Rennex & Co IT Solutions."</p>
+          </div>
+          <button>Vist site &xrarr;</button>
+        </div>
+
+        <div class="client1">
+          <img src="images/new logo.jpeg">
+          <h4>Manners International <br>School</h4>
+          <div class="testimony">
+          <p>"Rennex & Co IT Solutions transformed our school's IT systems,
+             making learning more interactive and efficient."</p>
+        </div>
+          <button>Vist site &xrarr;</button>
+        </div>
+
+
+                <div class="client1">
+          <img src="images/apg.jpeg">
+          <h4>A.P GRAFIX </h4>
+          <div class="testimony">
+          <p>"Rennex & Co IT Solutions transformed our graphic design business,
+             enhancing our creativity and client engagement."</p>
+        </div>
+          <button>Vist site &xrarr;</button>
+        </div>
+       </div>
+       </section>
+
+
+        <!-- VALUES, MISSION AND VISION -->
+         <section id="principles">
+        <h3>Our Core <small>Principles</small></h3>
+       <div class="values autoshow">
+         <div class="value">
+          <img src="images/core values.jpg">
+           <h4>Our Values</h4>
+            <div class="principles-info"><p>Integrity, Excellence, Innovation, and Collaboration.
+               Our values guide every decision we make. Every action we execute is tag of excellence as an IT solutions company.</p></div>
+         </div>
+         <div class="mission">
+          <img src="images/mission.jpg">
+           <h4>Our Mission</h4>
+           <div class="principles-info"><p>To provide cutting-edge IT solutions that empower 
+            businesses and individuals to thrive in the digital world. We are committed to delivering
+             exceptional service and innovative solutions.</p></div>
+         </div>
+         <div class="vision">
+          <img src="images/vision logo 4.jpg">
+           <h4>Our Vision</h4>
+           <div class="principles-info"><p>To be the leading provider of innovative IT services
+             that transform businesses and enhance lives globally. As a company, we strive to be
+              at the forefront of technological advancement, ensuring our clients are always ahead in their respective industries.</p></div>
+         </div>
+       </div>
+       </section>
+
+
+
+              <!-- CONTACT US -->
+               <section id="contact">
+       <div class="contact-box autoshow">
+        <h3>Get <small>In Touch</small></h3>
+
+        <div class="contact">
+          <div class="contact-content">
+          <p>Name</p>
+          <input type="text" placeholder="Your Name">
+          <p>Email</p>
+          <input type="email" placeholder="Your Email">
+          <p>Phone Number</p>
+          <input type="tel" placeholder="+1234567890">
+          <p>Message</p>
+          <textarea placeholder="Your Message"></textarea>
+          <button>Book a free 30 minutes Meeting &xrarr;</button>
+          </div>
+        </div>
+       </div>
+        </section>
+
+       <!-- FOOTER -->
+       <footer class="autoshow">
+        <img src="images/company logo.png">
+        <div class="footer-tabs">
+          <ul>  
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <hr>
+        <p>&copy; 2026 Rennex & Co IT Solutions. All rights reserved.</p>
+
+       </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
