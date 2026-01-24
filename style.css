@@ -731,11 +731,11 @@ h4{
 
 @keyframes roll{
   from{
-    transform: translateX(0);
+    transform: translateX(11%);
   }
 
   to{
-    transform: translateX(-20%);
+    transform: translateX(-8%);
   } 
 } 
 
