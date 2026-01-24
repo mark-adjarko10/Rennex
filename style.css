@@ -907,7 +907,7 @@ color: #100d0d;
 
 .contact input{
   padding: 10px;
-  width:310px;
+  width:60%;
   height: 55px;
   margin: 10px;
   border-radius: 10px;
@@ -917,7 +917,7 @@ color: #100d0d;
 }
 
 textarea{
-  width:310px;
+  width:60%;
   height:180px;
   margin:10px;
     border-radius: 2px;
@@ -966,8 +966,6 @@ footer img{
   display: block;
   box-shadow: 0px 5px 10px rgb(188, 185, 185);
 }
-
-
 
 
 
