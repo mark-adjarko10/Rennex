@@ -724,7 +724,7 @@ h4{
   display: flex;
   /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
   gap:20px;
-        animation: roll 4s linear infinite;
+        animation: roll 2s linear infinite;
       animation-direction: alternate;
       animation-iteration-count: infinite;
 }
