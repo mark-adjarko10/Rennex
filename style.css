@@ -16,8 +16,7 @@ body{
 .body{
     justify-content: center;
   align-items: center;
-  padding: 10px;
-}
+      }
 
 
 .navigation-bar{
@@ -251,7 +250,7 @@ border-bottom:4px solid rgb(12, 98, 218);
     line-height: 40px;
     position: absolute;
     top:20%;
-    left:35%;
+    left:25%;
     z-index: 1;
   }
 
