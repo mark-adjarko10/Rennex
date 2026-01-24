@@ -540,6 +540,7 @@ strong{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
+  align-items: center;
   width: 100%;
   height:50%;
   margin-top: 250px;
