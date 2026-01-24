@@ -176,13 +176,6 @@ border-bottom:4px solid rgb(12, 98, 218);
     flex-direction: column;
   }
 
-  .contact input{
-    width:400px;
-  }
-  textarea{
-    width:400px;
-  }
-
   .contact-content button{
     display: block;
   }
@@ -275,7 +268,6 @@ border-bottom:4px solid rgb(12, 98, 218);
   display: flex;
   height: 100vh;
   width: 100%;
-  padding-left: 0;
   align-items: center;
   justify-content: center;
   position: relative;
