@@ -488,7 +488,7 @@ h3{
 }
 
 .work-info{
-  padding-left: 50px;
+  padding-left: 10px;
   max-width: 600px;
 }
 
@@ -553,25 +553,14 @@ strong{
 
 .customer-logos img{
   width: 200px;
-  margin: 40px 80px;
+  margin: 30px 10px;
   border-radius: 50%;
     box-shadow: 0px 5px 10px rgb(224, 223, 223);
       transition: 0.4s ease-in-out;
   animation: none;
-  /*roll 4s linear infinite;
-  animation-direction: alternate;
-  animation-iteration-count: infinite; */
 }
 
-/* @keyframes roll{
-  from{
-    transform: translateX(0);
-  }
 
-  to{
-    transform: translateX(-20%);
-  } */
-/* } */
 
 /* CLIENTS */
 .clients{
@@ -948,6 +937,7 @@ footer{
 
 footer ul{
   list-style: none;
+  margin-top: 20px;
 }
 
 footer ul a{
