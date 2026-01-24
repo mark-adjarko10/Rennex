@@ -177,10 +177,10 @@ border-bottom:4px solid rgb(12, 98, 218);
   }
 
   .contact input{
-    width:280px;
+    width:300px;
   }
   textarea{
-    width:280px;
+    width:300px;
   }
 
   .contact-content button{
@@ -877,7 +877,7 @@ transition: 0.4s ease-in-out;
 }
 
 .contact-content{
-  padding: 10px;
+  padding: 50px;
   justify-content: center;
   align-items: center;
 }
