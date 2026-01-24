@@ -168,7 +168,6 @@ border-bottom:4px solid rgb(12, 98, 218);
 
    .contact{
     width: 100%;
-    max-width: 500px;
     flex-direction: column;
   }
 
