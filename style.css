@@ -34,6 +34,7 @@ body{
 
 h1{
   font-size: 35px;
+  padding-left: 5px;
 }
 
 small{
@@ -162,7 +163,7 @@ border-bottom:4px solid rgb(12, 98, 218);
   .content1, .content2, .content3,
 .client1, .value, .mission, .vision {
   width: 90%; /* instead of 350px or 310px */
-  max-width: 350px;
+  max-width: 320px;
   margin-bottom: 30px;
 }
 
@@ -873,7 +874,7 @@ transition: 0.4s ease-in-out;
 }
 
 .contact-content{
-  padding: 40px;
+  padding: 10px;
 }
 
 .contact-content button{
