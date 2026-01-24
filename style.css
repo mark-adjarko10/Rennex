@@ -179,8 +179,7 @@ border-bottom:4px solid rgb(12, 98, 218);
   .contact input,
   textarea{
     width: 100%;
-    max-width: 85%;
-    box-sizing: border-box;
+    max-width: 75%;
   }
 
   .contact-content button{
@@ -194,6 +193,7 @@ border-bottom:4px solid rgb(12, 98, 218);
     text-align: center;
     justify-content: center;
   }
+
 
 
   .navigation-bar{
