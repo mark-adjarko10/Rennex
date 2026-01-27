@@ -88,7 +88,7 @@ border-bottom:4px solid rgb(12, 98, 218);
    }
  
 /* (C) SMALL SCREEN */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 710px) {
 
   body{
     justify-content: center;
@@ -972,4 +972,32 @@ footer img{
 
 
 
+@media only screen and (min-width:200px){
 
+  .contents{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .customers{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .choose{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .values{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
